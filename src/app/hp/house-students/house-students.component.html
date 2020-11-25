@@ -1,0 +1,14 @@
+<div class="container">
+
+    <p id="title" *ngIf="!students">Sélectionnez une maison pour voir les élèves.</p>
+
+    <tr *ngFor="let student of students" (click)="onClick(student)" [ngStyle]="{'background-color': house.color}">
+        <div class="infos">
+            <td class="toCapitalize"><b>Nom:</b> {{student.name}}</td>
+            <td *ngIf="student.gender" class="toCapitalize"><b>Genre:</b> {{student.gender}}</td>
+            <td class="toCapitalize" *ngIf="student.patronus"><b>Patronus:</b> {{student.patronus}}</td>
+            <td *ngIf="!student.patronus"><i>Pas de patronus</i></td>
+        </div>
+        <img [src]="student.image"/>
+    </tr>
+</div>

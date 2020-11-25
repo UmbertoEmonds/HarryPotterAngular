@@ -1,0 +1,19 @@
+<h1>Harry Potter</h1>
+
+<div class="container">
+
+    <section class="left">
+        <app-house (onHouseClick)="onHouseClicked($event)"></app-house>
+    </section>
+    
+    <section class="right">
+        
+        <cdk-virtual-scroll-viewport itemSize="50" class="students-viewport">
+            <app-house-students (studentEvent)="onStudentClicked($event)" [house]="house"></app-house-students>
+        </cdk-virtual-scroll-viewport>
+    
+        <app-student [student]="student" [launch]="launch"></app-student>
+    
+    </section>
+
+</div>

@@ -1,0 +1,37 @@
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+h1 {
+    display: flex;
+    justify-content: space-around;
+    font-family: Harry Potter;
+    font-size: 70px;
+    padding-top: 30px;
+    padding-bottom: 12px;
+    color: white;
+    text-shadow: 0px 0px 20px rgb(255, 199, 250);
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.students-viewport{
+    height: 50%;
+    width: 100%;
+    margin-top: 12px;
+}
+
+app-student{
+    margin-right: 10px;
+    padding: 10px;
+    height: 50%;
+}
+
+.left{
+    display: flex;  
+}

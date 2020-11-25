@@ -1,0 +1,21 @@
+<div class="content" *ngIf="student && !launch" [ngStyle]="{'background-color': color}">
+
+    <div class="infos">
+        <div class="header">
+            <h1><b>{{student.name}}</b></h1> <img *ngIf="!student.alive" id="death" src="../../../assets/tete_de_mort.png"/>
+        </div>
+        <p><b>Acteur: </b>{{student.actor}}</p>
+        <p><b>Descendance: </b>{{student.ancestry}}</p>
+        <p *ngIf="student.dateOfBirth"><b>Date de naissance: </b>{{student.dateOfBirth}}</p>
+        
+        <div *ngIf="student.wand.core || student.wand.wood || student.wand.lenght" class="wand">
+            <h2><b>Baguette: </b></h2>
+            <p class="toCapitalize"><b>Coeur: </b>{{student.wand.core}}</p>
+            <p class="toCapitalize"><b>Longueur: </b>{{student.wand.length}}cm</p>
+            <p class="toCapitalize"><b>Bois: </b>{{student.wand.wood}}</p>
+        </div>
+    </div>
+
+    <img id="photo" [src]="student.image"/>
+
+</div>

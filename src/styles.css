@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: Harry Potter;
+    src: url(assets/harry_potter.TTF) format("opentype");
+  }
+
+html {
+  background: url("assets/background.png") no-repeat fixed; 
+  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  background-size: cover; /* version standardisée */
+  padding: 20px;
+}
+
+html, body { 
+  height: 100%;
+}
+
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,51 @@
+.content{
+    border: 1px solid #c1c1c1;
+    border-radius: 10px;
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.infos{
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+h1{
+    margin: 0px;
+}
+
+h2{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+p{
+    margin: 0px;
+}
+
+#death{
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+}
+
+#photo {
+    border-radius: 10%;
+    border: 1px solid #c1c1c1;
+    width: 100px;
+    height: 50%;
+}
+
+.toCapitalize{
+    text-transform: capitalize;
+}

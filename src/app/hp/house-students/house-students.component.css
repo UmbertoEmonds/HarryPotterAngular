@@ -1,0 +1,46 @@
+tr{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid #c1c1c1;
+    border-radius: 10px;
+    transition: 1s;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+#title {
+    margin-top: 20px;
+    display: flex;
+    color: white;
+}
+
+td{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #323232;
+}
+
+.toCapitalize{
+    text-transform: capitalize;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+tr:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+img {
+    border-radius: 100%;
+    border: 1px solid #444444;
+    width: 60px;
+    max-height: 80px;
+}

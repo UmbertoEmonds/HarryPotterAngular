@@ -1,0 +1,6 @@
+<table>
+    <tr *ngFor="let house of houses, let i = index" [ngStyle]="{'background-color': house.color}" (click)="onClick(i)">
+        <td>{{house.name}}</td>
+        <img width="70dp" height="75dp" [src]="house.logo"/>
+    </tr>
+</table>
